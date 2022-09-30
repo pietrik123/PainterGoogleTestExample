@@ -1,17 +1,17 @@
 ﻿#include "Painter.h"
 
-Painter::Painter(DrawingItem* pencil)
+Painter::Painter(DrawingItem* drawingItem)
 {
-    drawingItem = pencil;
+    m_drawingItem = drawingItem;
 }
 
 void Painter::paintRectangle(int posX, int posY, int width, int height)
 {
-    drawingItem->goTo(posX, posY);
-    drawingItem->penDown();
-    drawingItem->goTo(posX  + width, posY);
-    drawingItem->goTo(posX + width, posY + height);
-    drawingItem->goTo(posX, posY + height);
-    drawingItem->goTo(posX, posY);
-    drawingItem->penUp();
+    m_drawingItem->goTo(posX, posY);
+    m_drawingItem->penDown();
+    m_drawingItem->goTo(posX  + width, posY);
+    m_drawingItem->goTo(posX + width, posY + height);
+    m_drawingItem->goTo(posX, posY + height);
+    m_drawingItem->goTo(posX, posY);
+    m_drawingItem->penUp();
 }

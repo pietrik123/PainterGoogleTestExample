@@ -7,8 +7,8 @@
 class Painter
 {
 private:
-    DrawingItem* drawingItem;
+    DrawingItem* m_drawingItem;
 public:
-    Painter(DrawingItem* pencil);
+    Painter(DrawingItem* drawingItem);
     void paintRectangle(int posX, int posY, int widht, int height);
 };
