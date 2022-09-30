@@ -24,22 +24,22 @@ add_executable(
 )
 
 add_executable(
-	painter
-	src/main.cpp
-	src/Painter.cpp
-	src/Pen.cpp
+    painter
+    src/main.cpp
+    src/Painter.cpp
+    src/Pen.cpp
 )
 
 target_include_directories(
-	painter
-	PUBLIC
-	src/
+    painter
+    PUBLIC
+    src/include/
 )
 
 target_include_directories(
-	tests
-	PUBLIC
-	src/
+    tests
+    PUBLIC
+    src/include/
 )
 
 target_link_libraries(

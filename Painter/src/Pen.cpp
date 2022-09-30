@@ -5,15 +5,15 @@
 
 void Pen::penDown() 
 {
-	std::cout << "Pen::penDown() ... \n";
+    std::cout << "Pen::penDown() ... \n";
 }
 
 void Pen::penUp() 
 {
-	std::cout << "Pen::penUp() ... \n";
+    std::cout << "Pen::penUp() ... \n";
 }
 
 void Pen::goTo(int posX, int posY) 
 {
-	std::cout << "Pen::goTo( " << posX << " , " << posY << ")\n";
+    std::cout << "Pen::goTo( " << posX << " , " << posY << ")\n";
 }
