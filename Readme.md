@@ -2,7 +2,11 @@
 
 Simple example of using Google Mocks with Google unit tests.
 
-# Build
+# Prerequisite
+
+Requires installed git.
+
+# Build and run
 
 ## Visual Studio
 
@@ -17,5 +21,15 @@ From top menu choose Build -> Build all... .
 You may need to adjust CMake presets for your VS version. In CMakePresets.json,
 for windows-base configuration please update `"generator": "Visual Studio 17 2022"`
 section with relevant generator name.
+
+## Linux
+
+In project directory:
+```
+mkdir build
+cd build
+cmake ..
+make
+```
 
 
