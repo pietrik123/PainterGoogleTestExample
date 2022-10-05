@@ -22,6 +22,8 @@ You may need to adjust CMake presets for your VS version. In CMakePresets.json,
 for windows-base configuration please update `"generator": "Visual Studio 17 2022"`
 section with relevant generator name.
 
+Run exe files from the cmd line or VS IDE top bar.
+
 ## Linux
 
 In project directory:
@@ -31,5 +33,7 @@ cd build
 cmake ..
 make
 ```
+
+Run binaries from the cmd line.
 
 
